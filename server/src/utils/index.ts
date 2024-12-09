@@ -1,8 +1,8 @@
 import jwt from "jsonwebtoken";
-import mongoose from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 export type JWTUser = {
-    id: mongoose.Types.ObjectId; // MongoDB ObjectId
+    id: Schema.Types.ObjectId; // MongoDB ObjectId
     name: string;
     email: string;
    
